@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form_billed_not_received" model="ir.ui.view">
+        <field name="name">account.move.form.billed.not.received</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <header position="after">
+                <field name="is_billed_not_received" invisible="1"/>
+                <div class="alert alert-warning" role="alert" invisible="not is_billed_not_received">
+                    <field name="billed_not_received_warning" nolabel="1" readonly="1"/>
+                </div>
+            </header>
+        </field>
+    </record>
+
+    <record id="view_account_invoice_filter_billed_not_received" model="ir.ui.view">
+        <field name="name">account.move.search.billed.not.received</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <filter name="late" position="after">
+                <filter name="billed_not_received" string="Billed not received" domain="[('is_billed_not_received', '=', True)]"/>
+            </filter>
+        </field>
+    </record>
+</odoo>

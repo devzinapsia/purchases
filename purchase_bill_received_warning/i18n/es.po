@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_bill_received_warning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Zinapsia\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Billed (incl. this bill)"
+msgstr "Facturado (con este comprobante)"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Billed more than received on the purchase order:"
+msgstr "Se factura más de lo recibido en la orden de compra:"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Ordered"
+msgstr "Pedido"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Pending billing"
+msgstr "Pendiente de facturar"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Pending receipt"
+msgstr "Pendiente de recibir"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Purchase order"
+msgstr "Orden de compra"
+
+#. module: purchase_bill_received_warning
+#. odoo-python
+#: code:addons/purchase_bill_received_warning/models/account_move.py:0
+msgid "Received"
+msgstr "Recibido"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model,name:purchase_bill_received_warning.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_bank_statement_line__billed_not_received_warning
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_move__billed_not_received_warning
+msgid "Billed not received warning"
+msgstr "Aviso de facturado sin recibir"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_bank_statement_line__is_billed_not_received
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_move__is_billed_not_received
+#: model_terms:ir.ui.view,arch_db:purchase_bill_received_warning.view_account_invoice_filter_billed_not_received
+msgid "Billed not received"
+msgstr "Facturado sin recibir"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_move__display_name
+msgid "Display Name"
+msgstr "Nombre en pantalla"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model.fields,field_description:purchase_bill_received_warning.field_account_move__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_bill_received_warning
+#: model:ir.model.fields,help:purchase_bill_received_warning.field_account_bank_statement_line__is_billed_not_received
+#: model:ir.model.fields,help:purchase_bill_received_warning.field_account_move__is_billed_not_received
+msgid ""
+"Vendor bill with at least one purchase order line billed beyond what was "
+"received."
+msgstr ""
+"Factura de proveedor con al menos una línea de orden de compra facturada por"
+" encima de lo recibido."
