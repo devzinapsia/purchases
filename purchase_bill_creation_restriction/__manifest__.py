@@ -1,7 +1,7 @@
 {
     "name": "Restricción de creación de facturas desde compras",
-    "summary": "Solo los usuarios con permisos de facturación pueden crear facturas de proveedor desde una orden de compra",
-    "version": "19.0.1.0.0",
+    "summary": "Permiso adicional para crear facturas de proveedor desde una orden de compra",
+    "version": "19.0.1.1.0",
     "category": "Inventory/Purchase",
     "license": "AGPL-3",
     "author": "Zinapsia",
@@ -10,6 +10,7 @@
         "purchase_ux",
     ],
     "data": [
+        "security/res_groups.xml",
         "views/purchase_order_views.xml",
     ],
     "assets": {
@@ -18,6 +19,7 @@
             "purchase_bill_creation_restriction/static/src/views/*.xml",
         ],
     },
+    "post_init_hook": "post_init_hook",
     "auto_install": False,
     "application": False,
     "installable": True,

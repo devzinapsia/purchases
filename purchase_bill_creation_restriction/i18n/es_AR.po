@@ -15,6 +15,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: purchase_bill_creation_restriction
+#: model:res.groups,comment:purchase_bill_creation_restriction.group_purchase_create_bill
+msgid "Allows creating vendor bills from purchase orders."
+msgstr "Permite crear facturas de proveedor desde las órdenes de compra."
+
+#. module: purchase_bill_creation_restriction
 #: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_purchase_order__display_name
 msgid "Display Name"
 msgstr "Nombre para mostrar"
@@ -28,6 +33,11 @@ msgstr "ID"
 #: model:ir.model,name:purchase_bill_creation_restriction.model_purchase_order
 msgid "Purchase Order"
 msgstr "Orden de compra"
+
+#. module: purchase_bill_creation_restriction
+#: model:res.groups,name:purchase_bill_creation_restriction.group_purchase_create_bill
+msgid "Purchase: allow bill creation"
+msgstr "Compras: permite crear factura"
 
 #. module: purchase_bill_creation_restriction
 #. odoo-python

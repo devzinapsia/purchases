@@ -9,13 +9,13 @@
         <field name="inherit_id" ref="purchase_ux.purchase_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//header/widget[@name='purchase_file_uploader']" position="attributes">
-                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute name="groups">purchase_bill_creation_restriction.group_purchase_create_bill</attribute>
             </xpath>
             <xpath expr="//header/button[@name='action_create_invoice'][@data-hotkey='i']" position="attributes">
-                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute name="groups">purchase_bill_creation_restriction.group_purchase_create_bill</attribute>
             </xpath>
             <xpath expr="//header/button[@name='action_create_invoice'][@data-hotkey='w']" position="attributes">
-                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute name="groups">purchase_bill_creation_restriction.group_purchase_create_bill</attribute>
             </xpath>
         </field>
     </record>
@@ -26,7 +26,7 @@
         <field name="inherit_id" ref="purchase.purchase_order_view_tree"/>
         <field name="arch" type="xml">
             <xpath expr="//header/button[@name='action_create_invoice']" position="attributes">
-                <attribute name="groups">account.group_account_invoice</attribute>
+                <attribute name="groups">purchase_bill_creation_restriction.group_purchase_create_bill</attribute>
             </xpath>
         </field>
     </record>

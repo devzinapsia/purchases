@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- No privilege: shown as a checkbox under "Extra rights" on the user form (debug mode). -->
+    <record id="group_purchase_create_bill" model="res.groups">
+        <field name="name">Purchase: allow bill creation</field>
+        <field name="comment">Allows creating vendor bills from purchase orders.</field>
+    </record>
+
+    <!-- Invoicing users can always create bills from purchase orders. -->
+    <record id="account.group_account_invoice" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_purchase_create_bill'))]"/>
+    </record>
+
+</odoo>
