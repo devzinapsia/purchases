@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Restricción de creación de facturas desde compras - Zinapsia</title>
+</head>
+<body>
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <div class="oe_span12">
+                <h2 class="oe_slogan" style="color: #714B67; font-weight: bold;">Restricción de creación de facturas desde compras</h2>
+                <h3 class="oe_slogan">Solo quien tiene permisos de facturación crea facturas de proveedor desde Compras</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <div class="oe_span12">
+                <p class="oe_mt32" style="font-size: 1.2em; text-align: justify;">
+                    En Odoo estándar, un usuario de Compras sin acceso a Contabilidad puede crear
+                    facturas de proveedor en borrador que después no puede confirmar. Este módulo
+                    reserva la creación de facturas desde la orden de compra a los usuarios con
+                    permisos de facturación.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="oe_container oe_dark">
+        <div class="oe_row oe_spaced">
+            <div class="oe_span12">
+                <h3 class="oe_mt32" style="color: #714B67;">Funcionalidades</h3>
+                <ul style="list-style-type: square; line-height: 2;">
+                    <li><strong>Botones ocultos:</strong> "Crear factura" y "Subir factura" en el formulario y en la lista de órdenes de compra.</li>
+                    <li><strong>Bloqueo en el servidor:</strong> la acción "Crear factura" de la orden de compra devuelve un mensaje claro aunque se llame sin los botones.</li>
+                    <li><strong>Sin cambios para Contabilidad:</strong> los usuarios con permisos de facturación trabajan igual que antes.</li>
+                    <li><strong>Sin tocar permisos de acceso:</strong> Compras sigue viendo las facturas de sus órdenes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="oe_container">
+        <div class="oe_row oe_spaced">
+            <div class="oe_span12">
+                <p class="text-center" style="margin-top: 50px; font-style: italic;">
+                    Desarrollado por <strong>Zinapsia</strong> para Odoo 19.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
