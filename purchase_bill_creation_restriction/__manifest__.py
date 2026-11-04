@@ -1,7 +1,7 @@
 {
     "name": "Restricción de creación de facturas desde compras",
     "summary": "Permiso adicional para crear facturas de proveedor desde una orden de compra",
-    "version": "19.0.1.1.0",
+    "version": "19.0.1.2.0",
     "category": "Inventory/Purchase",
     "license": "AGPL-3",
     "author": "Zinapsia",

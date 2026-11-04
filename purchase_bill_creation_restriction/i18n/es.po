@@ -20,14 +20,34 @@ msgid "Allows creating vendor bills from purchase orders."
 msgstr "Permite crear facturas de proveedor desde las órdenes de compra."
 
 #. module: purchase_bill_creation_restriction
+#: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_account_move__display_name
+#: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_purchase_order__display_name
 msgid "Display Name"
 msgstr "Nombre para mostrar"
 
 #. module: purchase_bill_creation_restriction
+#: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_account_move__id
+#: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_account_move_line__id
 #: model:ir.model.fields,field_description:purchase_bill_creation_restriction.field_purchase_order__id
 msgid "ID"
 msgstr "ID"
+
+#. module: purchase_bill_creation_restriction
+#: model:ir.model,name:purchase_bill_creation_restriction.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: purchase_bill_creation_restriction
+#: model:ir.model,name:purchase_bill_creation_restriction.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: purchase_bill_creation_restriction
+#. odoo-python
+#: code:addons/purchase_bill_creation_restriction/models/account_move.py:0
+msgid "Only accounting users can reset to draft or cancel vendor bills."
+msgstr "Solo los usuarios de contabilidad pueden pasar a borrador o cancelar facturas de proveedor."
 
 #. module: purchase_bill_creation_restriction
 #: model:ir.model,name:purchase_bill_creation_restriction.model_purchase_order
@@ -41,6 +61,7 @@ msgstr "Compras: permite crear factura"
 
 #. module: purchase_bill_creation_restriction
 #. odoo-python
+#: code:addons/purchase_bill_creation_restriction/models/account_move.py:0
 #: code:addons/purchase_bill_creation_restriction/models/purchase_order.py:0
 msgid ""
 "You don't have permission to create vendor bills. Please contact the "
@@ -48,3 +69,13 @@ msgid ""
 msgstr ""
 "No tenés permiso para crear facturas de proveedor. Comunicate con el equipo "
 "de contabilidad."
+
+#. module: purchase_bill_creation_restriction
+#. odoo-python
+#: code:addons/purchase_bill_creation_restriction/models/account_move.py:0
+msgid ""
+"You don't have permission to modify or delete vendor bills. Please contact "
+"the accounting team."
+msgstr ""
+"No tenés permiso para modificar ni borrar facturas de proveedor. Comunicate "
+"con el equipo de contabilidad."
